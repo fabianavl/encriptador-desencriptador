@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fab1c7e1a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img_head.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar bg-primary mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/Logo.png" alt="logo-alura" class="d-inline-block align-text-top" width="100px" height="30px">
+            <p class="titulo-alura">Encriptador</p>
+          </a>
+        </div>
+      </nav>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui:" ></textarea>
+            
+            <div class="aviso_botones">
+                <i class="fa-solid fa-circle-exclamation fa-xs">
+                    <p class="advertencia">Sólo letras minúsculas y sin acentos</p>
+                </i>
+                <div class="botones">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="btnEncriptar()">Encriptar</button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="10">
+            </textarea>
+
+            <div class="boton-copiar">
+                <div class="d-grid gap-2 col-6 mx-auto pt-5">
+                    <button class="btn btn-primary" type="button" id="copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="https://github.com/fabianavl/Alura-git">
+                <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+            </a>
+            <p> &copy Copyright Encriptador- 2023</p>
+        </div> 
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
